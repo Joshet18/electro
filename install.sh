@@ -43,9 +43,9 @@ installTheme(){
     tar -cvf Backup.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r pterotheme
+    rm -r electro
     git clone https://github.com/Joshet18/electro.git
-    cd pterotheme
+    cd electro
     rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/public/favicons/favicon.ico
